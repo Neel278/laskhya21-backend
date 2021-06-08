@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +16,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+// contact route for getting feedback data
+Route::post('/contact', [ContactController::class, 'index']);
+
+// contact route for getting feedback data
+Route::get('/feedbacks', [ContactController::class, 'show']);
+
+// authentication login route
+Route::post("login", [UserController::class, 'index']);
