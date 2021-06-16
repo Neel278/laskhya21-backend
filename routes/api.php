@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DepartmentsController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -16,15 +17,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::middleware('auth:api')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
+// auth routes
+Route::post('/register', [UserController::class, 'register']);
+Route::post('/login', [UserController::class, 'login']);
 
-// contact route for getting feedback data
-Route::post('/contact', [ContactController::class, 'index']);
+// route to show login errors
+Route::get('/login', [UserController::class, 'loginGet'])->name('login');
+
+// contact route for sending feedback data
+Route::post('/contact', [ContactController::class, 'index'])->middleware('cors');
+// Route::get('/contact', function () {
+//     return response()->json(['message' => 'hello'], 200);
+// })->middleware('cors');
 
 // contact route for getting feedback data
 Route::get('/feedbacks', [ContactController::class, 'show']);
+Route::get('/verify-email/{user_email}&{mail_hash}', [UserController::class, 'verifyMail']);
 
-// authentication login route
-Route::post("login", [UserController::class, 'index']);
+// This is the group of authentication required routes
+Route::middleware('auth:sanctum')->group(function () {
+    Route::get('/user', [UserController::class, 'user']);
+    Route::post('/logout', [UserController::class, 'logout']);
+
+    // This is the group of authentication for admin required routes
+    Route::middleware('adminauth')->group(function () {
+        Route::get('/admin', [UserController::class, 'admin']);
+        Route::get('/admin/departments', [DepartmentsController::class, 'index']);
+    });
+});

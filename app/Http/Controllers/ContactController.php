@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -19,20 +20,22 @@ class ContactController extends Controller
         ]);
         if ($validator->fails()) {
             // if validation fails return the error
-            return $validator->errors();
+            return response()->json(['message' => $validator->errors()->all(), 'type' => 'error']);
         } else {
             // if validation succeeds we need to save the data and return the response
             $contact = new Contact();
             $contact->name = $request->name;
             $contact->email = $request->email;
             $contact->message = $request->message;
+            $contact->created_at = Carbon::now();
+            $contact->updated_at = Carbon::now();
             $res = $contact->save();
 
             // check if message was successfully saved or not
             if ($res) {
-                return response()->json(['message' => "Your messages is saved"], 200);
+                return response()->json(['message' => ["Your messages is saved"], 'type' => 'sucess'], 200);
             } else {
-                return response()->json(['message' => "something went wrong"], 500);
+                return response()->json(['message' => ["something went wrong"], 'type' => 'error'], 500);
             }
         }
     }

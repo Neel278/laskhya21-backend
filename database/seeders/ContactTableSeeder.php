@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
-class UsersTableSeeder extends Seeder
+class ContactTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,10 +16,11 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        DB::table('contacts')->insert([
             'name' => 'Neel Thakkar',
             'email' => 'admin@lakshya2021.com',
-            'password' => Hash::make('admin#lakshya@2021'),
+            'message' =>
+            'Welcome Lakshya team. This is demo message!',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
