@@ -38,7 +38,7 @@ class AdminController extends Controller
     }
     function showOneMessage($message_id)
     {
-        $message = Contact::find($message_id)->first();
+        $message = Contact::find($message_id);
         return view('admin.message', ['message' => $message]);
     }
 }
