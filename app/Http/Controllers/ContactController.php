@@ -33,7 +33,7 @@ class ContactController extends Controller
 
             // check if message was successfully saved or not
             if ($res) {
-                return response()->json(['message' => ["Your messages is saved"], 'type' => 'sucess'], 200);
+                return response()->json(['message' => ["Your messages is saved"], 'type' => 'success'], 200);
             } else {
                 return response()->json(['message' => ["something went wrong"], 'type' => 'error'], 500);
             }
@@ -42,6 +42,7 @@ class ContactController extends Controller
 
     function show()
     {
-        return Contact::all();
+        return Contact::orderBy('created_at', 'desc')
+            ->limit(50)->get();
     }
 }
