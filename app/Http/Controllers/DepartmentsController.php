@@ -11,4 +11,9 @@ class DepartmentsController extends Controller
     {
         return Department::find(2)->getAllEvents;
     }
+
+    function show()
+    {
+        return Department::all();
+    }
 }

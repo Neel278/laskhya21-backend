@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DepartmentsController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -33,6 +34,13 @@ Route::post('/contact', [ContactController::class, 'index'])->middleware('cors')
 // contact route for getting feedback data
 Route::get('/feedbacks', [ContactController::class, 'show']);
 Route::get('/verify-email/{user_email}&{mail_hash}', [UserController::class, 'verifyMail']);
+
+// Department route for getting all department list
+Route::get('/departments', [DepartmentsController::class, 'show']);
+// Department route for getting all events list
+Route::get('/departments/{dep_name}', [EventController::class, 'getEventsOfAnDepartment']);
+// Events route for getting one event
+Route::get('/events/{event_name}', [EventController::class, 'searchOneEvent']);
 
 // This is the group of authentication required routes
 Route::middleware('auth:sanctum')->group(function () {

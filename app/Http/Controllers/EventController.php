@@ -56,4 +56,14 @@ class EventController extends Controller
         Event::find($event_id)->delete();
         return response(['message' => 'Successfully deleted event'], 200);
     }
+    function getEventsOfAnDepartment($dep_name)
+    {
+        $dep = Department::where('name', $dep_name)->first();
+        // return $dep;
+        return Event::where('department_id', $dep->id)->get();
+    }
+    function searchOneEvent($event_name)
+    {
+        return Event::where('name', $event_name)->first();
+    }
 }
