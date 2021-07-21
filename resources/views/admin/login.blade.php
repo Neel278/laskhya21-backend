@@ -20,7 +20,7 @@
         <form method="POST" action="/admin/login">
             @csrf
             <input type="text" id="login" class="fadeIn second" name="email" placeholder="login">
-            <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
             <input type="submit" class="fadeIn fourth" value="Log In">
         </form>
 

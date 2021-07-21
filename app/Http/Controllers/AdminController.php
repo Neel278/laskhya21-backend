@@ -32,7 +32,7 @@ class AdminController extends Controller
     {
         $res = app('App\Http\Controllers\UserController')->logout($request);
         if ($res->status() == 200) {
-            return redirect()->route('admin.login');
+            return redirect()->route('login');
         };
         return redirect()->route('admin.dashboard');
     }

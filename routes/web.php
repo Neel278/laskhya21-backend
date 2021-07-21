@@ -22,7 +22,7 @@ Route::get('/', function () {
 // Admin login routes
 Route::get('/admin/login', function () {
     return view('admin/login');
-})->name('admin.login');
+})->name('login');
 
 Route::post('/admin/login', [AdminController::class, 'index']);
 
@@ -32,15 +32,21 @@ Route::middleware('auth:sanctum', 'adminauth')->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'show'])->name('admin.dashboard');
 
     // Routes to add event
-    Route::get('/admin/addEvent', [EventController::class, 'index']);
-    Route::post('/admin/addEvent', [EventController::class, 'add'])->name('event.add');
+    // Route::get('/admin/addEvent', [EventController::class, 'index']);
+    // Route::post('/admin/addEvent', [EventController::class, 'add'])->name('event.add');
 
     // Routes to update event
     Route::get('/admin/updateEvent', [EventController::class, 'show']);
     // Routes to search event in update page
     Route::post('/admin/searchEvent', [EventController::class, 'search']);
+    // Routes to search main event in update page
+    // Route::post('/admin/searchMainEvent', [EventController::class, 'main_search']);
     // Route to delete an event
     Route::get('/admin/delete/{event_id}', [EventController::class, 'delete']);
+    // Route to update an event
+    Route::get('/admin/edit/{event_id}', [EventController::class, 'update']);
+    // Route to update a main event
+    Route::post('/admin/update/{event_id}', [EventController::class, 'updateOne']);
 
     // Route to show messages
     Route::get('/admin/messages', [AdminController::class, 'messages']);

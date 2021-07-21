@@ -18,6 +18,7 @@ class EventTable extends Migration
             $table->unsignedBigInteger('department_id');
             $table->string('name');
             $table->string('description');
+            $table->string('img');
             $table->foreign('department_id')->references('id')->on('departments')->onDelete('cascade');
         });
     }
@@ -29,6 +30,6 @@ class EventTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('events');
     }
 }

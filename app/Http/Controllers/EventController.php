@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Department;
 use App\Models\Event;
+use App\Models\MainEvent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -38,22 +39,45 @@ class EventController extends Controller
     // To show all events from which admin can select one event for updating details
     function show($events = [])
     {
-        $departments = Department::all();
+        $departments = Event::all();
         return view('event.update', ['departments' => $departments, 'events' => $events]);
     }
 
     // To search department wise events list on update page
     function search(Request $request)
     {
-        $events = Event::where('department_id', $request->edepartment)->get();
+        $events = MainEvent::where('event_id', $request->edepartment)->get();
         // return view('event.update', ['departments' => $departments, 'events' => $events]);
         return $this->show($events);
+    }
+    // To search event wise main events list on update page
+    // function main_search(Request $request)
+    // {
+    //     $events = MainEvent::where('event_id', $request->edepartment)->get();
+    //     // return view('event.update', ['departments' => $departments, 'events' => $events]);
+    //     return $this->show($events);
+    // }
+
+    // To update main event details
+    function update($event_id)
+    {
+        $main_event = MainEvent::find($event_id);
+        return view('event.updateOne', ['main_event' => $main_event]);
+    }
+    // To update main event details
+    function updateOne($event_id, Request $request)
+    {
+        $main_event = MainEvent::find($event_id)->first();
+        $main_event->price = $request->eprice;
+        $main_event->name = $request->ename;
+        $main_event->update();
+        return redirect('/admin/updateEvent');
     }
 
     // To delete an event
     function delete($event_id)
     {
-        Event::find($event_id)->delete();
+        MainEvent::find($event_id)->delete();
         return response(['message' => 'Successfully deleted event'], 200);
     }
     function getEventsOfAnDepartment($dep_name)
@@ -62,8 +86,14 @@ class EventController extends Controller
         // return $dep;
         return Event::where('department_id', $dep->id)->get();
     }
-    function searchOneEvent($event_name)
+    function getMainEventsOfAnEvent($event_name)
     {
-        return Event::where('name', $event_name)->first();
+        $event = Event::where('name', $event_name)->first();
+        return MainEvent::where('event_id', $event->id)->get();
+    }
+    function searchOneEvent($main_event_name)
+    {
+        return MainEvent::where('name', $main_event_name)->first();
+        // return MainEvent::where('event_id', $event->id)->get();
     }
 }

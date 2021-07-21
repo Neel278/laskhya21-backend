@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             UsersTableSeeder::class,
             DepartmentsTableSeeder::class,
             EventsTableSeeder::class,
+            MainEventsTableSeeder::class,
             ContactTableSeeder::class
         ]);
         // \App\Models\User::factory(10)->create();
