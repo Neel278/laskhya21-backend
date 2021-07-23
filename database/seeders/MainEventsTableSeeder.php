@@ -879,7 +879,7 @@ class MainEventsTableSeeder extends Seeder
             </li>',
       'rules' => "● In case of any conflict or misconduct, decisions taken by the management will be final and no excuses will be entertained. <br/>● You have to keep your camera ON during the event. <br/> ● The video should be uploaded in a folder in your drive and the link for the same should be uploaded in the Google form link sent to you via email in due time <br/>● The duration of the video should not exceed 8 minutes. <br/>● The video can be recorded on the phone, camera, or any other device.",
       'criteria' => "● Expert judges will judge the content of the video based on talent, effort, and also the quality of the content presented.",
-      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● No participation certificates will be provided for this event",
+      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● All participants who attended the event will get a participation certificate.",
       'event_id' => 8
     ]);
     DB::table('mainevents')->insert([
@@ -904,7 +904,7 @@ class MainEventsTableSeeder extends Seeder
             </li>',
       'rules' => "● In case of any conflict or misconduct, decisions taken by the management will be final and no excuses will be entertained. <br/>● You have to keep your camera ON during the event. <br/> ● The video should be uploaded in a folder in your drive and the link for the same should be uploaded in the Google form link sent to you via email in due time <br/>● The duration of the video should not exceed 8 minutes. <br/>● The video can be recorded on the phone, camera, or any other device.",
       'criteria' => "● Expert judges will judge the content of the video based on talent, effort, and also the quality of the content presented.",
-      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● No participation certificates will be provided for this event",
+      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● All participants who attended the event will get a participation certificate.",
       'event_id' => 8
     ]);
     DB::table('mainevents')->insert([
@@ -932,7 +932,7 @@ class MainEventsTableSeeder extends Seeder
             </li>',
       'rules' => "● In case the participant arrives late, no consideration will be given and would have to play with the remaining time. <br/>● The number of rounds may change as per the total number of participants. <br/>● Google search is allowed.",
       'criteria' => "● The performance will be directly linked to the number of points scored in each round.",
-      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● No participation certificates will be provided for this event.",
+      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● All participants who attended the event will get a participation certificate.",
       'event_id' => 8
     ]);
     DB::table('mainevents')->insert([
@@ -971,7 +971,7 @@ class MainEventsTableSeeder extends Seeder
             ● Maps will be decided after the completion of team registrations.
             ",
       'criteria' => "● Each winning team goes to the next round and last round will be a final round",
-      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● No participation certificates will be provided for this event.",
+      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● All participants who attended the event will get a participation certificate.",
       'event_id' => 8
     ]);
     DB::table('mainevents')->insert([
@@ -1001,7 +1001,7 @@ class MainEventsTableSeeder extends Seeder
       'rules' => "● All players and team members are informed to download the latest version of BGMI and erangle map. <br/>● If player disconnect during match , the game might be continue and will not be restart <br/>● If you have any internal issue (ping issue) In-game that it will be your responsibility. <br/>● If some player of the team is absent during the given time then it will be your fault and time will not change . You have to play with an available player <br/>● Players may participate in Events only on mobile phone handheld devices running the Android or The iOS operating systems. Players may not use peripheral devices of any kind without the approval of <br/>● Tournament Officials (including adapters, controllers, Bluetooth keyboards, and mic). Players May not use an emulator to play on a PC or other device that is not a handheld device. <br/>● Team Members must behave in a professional and Sportsmanlike manner in their interactions with other competitors, Tournament Officials, the Tournament Organizer <br/>● It is forbidden to cheat , modify the game file , exploit bug , and/or use any third party application which would give you an unfair advantage against other player/team. Using any cheat will result in disqualification. This includes but are not limited to <br/>○ Esp <br/>○ Magic bullet <br/>○ Wall hack <br/>○ Speed Hack <br/>○ Aimbot <br/>○ No recoil <br/>○ Flying vehicles <br/><i>Note: (in game)</i> <br/>● No technical issues on your end will be entertained other than the once specified in the rule <br/>● Any kind of disrespectful behaviour towards the opposing team or event organizer will not be appreciated <br/x>● Discussion made by the organising committee will be final and non arguable
             ",
       'criteria' => "● Each winning team goes to the next round and last round will be a final round",
-      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br />● No participation certificates will be provided for this event.",
+      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● All participants who attended the event will get a participation certificate.",
       'event_id' => 8
     ]);
     DB::table('mainevents')->insert([
@@ -1031,7 +1031,7 @@ class MainEventsTableSeeder extends Seeder
       'rules' => "● All players and team members are informed to download the latest version of BGMI and erangle map. <br/>● If player disconnect during match , the game might be continue and will not be restart <br/>● If you have any internal issue (ping issue) In-game that it will be your responsibility. <br/>● If some player of the team is absent during the given time then it will be your fault and time will not change . You have to play with an available player <br/>● Players may participate in Events only on mobile phone handheld devices running the Android or The iOS operating systems. Players may not use peripheral devices of any kind without the approval of <br/>● Tournament Officials (including adapters, controllers, Bluetooth keyboards, and mic). Players May not use an emulator to play on a PC or other device that is not a handheld device. <br/>● Team Members must behave in a professional and Sportsmanlike manner in their interactions with other competitors, Tournament Officials, the Tournament Organizer <br/>● It is forbidden to cheat , modify the game file , exploit bug , and/or use any third party application which would give you an unfair advantage against other player/team. Using any cheat will result in disqualification. This includes but are not limited to <br/>○ Esp <br/>○ Magic bullet <br/>○ Wall hack <br/>○ Speed Hack <br/>○ Aimbot <br/>○ No recoil <br/>○ Flying vehicles <br/><i>Note: (in game)</i> <br/>● No technical issues on your end will be entertained other than the once specified in the rule <br/>● Any kind of disrespectful behaviour towards the opposing team or event organizer will not be appreciated <br/x>● Discussion made by the organising committee will be final and non arguable
             ",
       'criteria' => "● Each winning team goes to the next round and last round will be a final round",
-      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br />● No participation certificates will be provided for this event.",
+      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● All participants who attended the event will get a participation certificate.",
       'event_id' => 8
     ]);
     DB::table('mainevents')->insert([
@@ -1061,7 +1061,7 @@ class MainEventsTableSeeder extends Seeder
       'rules' => "● Event managers or judge’s decisions will be final. <br/>● Stock-engine or any other machine is not allowed. <br/>● Participants will have to follow all FIDE’s (The International Chess Federation) rules.
             ",
       'criteria' => "● The game will follow the rules as per FIDE and after the match, the winners will be declared by the judges",
-      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● No participation certificates will be provided for this event.",
+      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● All participants who attended the event will get a participation certificate.",
       'event_id' => 8
     ]);
     DB::table('mainevents')->insert([
@@ -1094,7 +1094,7 @@ class MainEventsTableSeeder extends Seeder
       'rules' => "● Avoid using multiple accounts to participate in the competition. <br/>● Stick to the originality of memes you make to increase the chances of winning. Copied memes will be disqualified. <br/>● You can use various tools to make and edit memes. Avoid using meme generators. <br/>● You can edit your memes as many times as you want before the deadline. <br/>● This is a fun competition so mild trolling is acceptable. (There is a difference between trolling and disrespect. The disrespect of any participants or coordinators is not acceptable). <br/>● Your memes should not contain any kind racism, disrespect towards any religious group or community, pornographic content will be disqualified. <br/>● Going against the jury Members is not acceptable.
             ",
       'criteria' => "● We respect every participant’s creativity so let us show you how we Judge a meme. Judge's Formula: 55% Humor + 30% Uniqueness + 15% Editing and Dedication <br/>● Originality, sarcasm and humor will be given priority. <br/>● Make it more unique and give it some personal touch to differentiate. <br/>● Editing level of any template to make it usable for your content.",
-      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● No participation certificates will be provided for this event.",
+      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● All participants who attended the event will get a participation certificate.",
       'event_id' => 8
     ]);
     DB::table('mainevents')->insert([
@@ -1121,7 +1121,7 @@ class MainEventsTableSeeder extends Seeder
       'rules' => "● Poster should not be offensive to any religion, casts, persons, etc. <br/>● Only hand made posters will be considered. Any computerized poster will not be accepted. <br/>● Make the poster in a live session. Pre-made posters will not be allowed. <br/>● Make sure that you have proper Internet quality during the whole event. <br/>● You have to turn on your camera while making the poster
             ",
       'criteria' => "● Judges will decide winners according to the following criteria. <br/>● The poster that was made, was it according to the theme or not? <br/>● Neatness and cleanliness.",
-      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● No participation certificates will be provided for this event.",
+      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● All participants who attended the event will get a participation certificate.",
       'event_id' => 8
     ]);
     DB::table('mainevents')->insert([
@@ -1153,7 +1153,7 @@ class MainEventsTableSeeder extends Seeder
             ',
       'rules' => "● The Decision of the manager will be the final decision. <br/>● If you have any internet issues in the game then it will be completely your responsibility. <br/>● If any misbehavior will be noticed by the manager then you will be fired from the entire game.",
       'criteria' => "● The person with the maximum points goes to the next round.",
-      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● No participation certificates will be provided for this event.",
+      'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● All participants who attended the event will get a participation certificate.",
       'event_id' => 8
     ]);
     DB::table('mainevents')->insert([

@@ -22,8 +22,8 @@ class EventsTableSeeder extends Seeder
             'department_id' => 1
         ]);
         DB::table('events')->insert([
-            'name' => 'Electrobuzz',
-            'img' => '1vZCT4_czKa5_qQWYbv1lBj-QywbCwArM',
+            'name' => 'Electrolution',
+            'img' => '1FhasszPdLmCze9Hfgz0m8ze7b1KvkPSD',
             'description' => 'In electrobuzz your sight will be a lightening bolt that causes \'transients\' in everyone\'s nerve line, You will be step up transformer, Too boost our spirits',
             'department_id' => 1
         ]);
