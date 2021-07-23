@@ -644,8 +644,8 @@ class MainEventsTableSeeder extends Seeder
     DB::table('mainevents')->insert([
       'name' => 'Robo-Sapiens',
       'price' => 120,
-      'img' => '',
-      'big_img' => '',
+      'img' => '1A3BSnMgvgfw-x-FqWW2um1ZuQC8SrHQc',
+      'big_img' => '1AADbw5FnJfFArG_cy8JZjjUYlHGhZpKm',
       'rulebook' => '',
       'allevents_id' => '1799675',
       'platform' => 'MS Teams <br/> Google Forms',
@@ -862,7 +862,7 @@ class MainEventsTableSeeder extends Seeder
       'price' => 30,
       'img' => '1ET2iwKDxQlxDuSNzM1lzUqGQz7bhvkbT',
       'big_img' => '1IC4Z4QhXXDQcoOCqekg0H0sdhg68sN2H',
-      'rulebook' => '',
+      'rulebook' => 'https://drive.google.com/file/d/1s4_chB72hL6IYrka92svSXJMvh7lBLi3/view?usp=sharing',
       'allevents_id' => '1799977',
       'platform' => '',
       'participants' => 'Individual (solo)',
@@ -887,7 +887,7 @@ class MainEventsTableSeeder extends Seeder
       'price' => 90,
       'img' => '1ET2iwKDxQlxDuSNzM1lzUqGQz7bhvkbT',
       'big_img' => '1IC4Z4QhXXDQcoOCqekg0H0sdhg68sN2H',
-      'rulebook' => '',
+      'rulebook' => 'https://drive.google.com/file/d/13Q6M5Pt7Fm6tp7g5kWY2639aTGHHOxnX/view?usp=sharing',
       'allevents_id' => '1799988',
       'platform' => '',
       'participants' => 'Team',
@@ -1156,21 +1156,261 @@ class MainEventsTableSeeder extends Seeder
       'rewards' => "● Top three winners from the final round will get exciting prizes and winning certificates. <br/>● All participants who attended the event will get a participation certificate.",
       'event_id' => 8
     ]);
-    DB::table('mainevents')->insert([
-      'name' => 'To be added soon...',
-      'price' => 0,
-      'img' => '',
-      'big_img' => '',
-      'rulebook' => '',
-      'allevents_id' => '',
-      'platform' => 'To be added soon...',
-      'participants' => 'Individual (solo)',
-      'overview' => 'To be added soon...',
-      'event_structure' => "To be added soon...",
-      'rules' => "To be added soon...",
-      'criteria' => "To be added soon...",
-      'rewards' => "To be added soon...",
-      'event_id' => 9
-    ]);
+     //1 (ethical hacking)
+DB::table('mainevents')->insert([
+
+  'name' => 'Ethical Hacking & Cyber Security Workshop',
+  'price' => 100,
+  'img' => '',
+  'big_img' => '',
+  'rulebook' => '',
+  'allevents_id' => '',
+  'platform' => 'MS Teams',
+  'participants' => 'Individual (solo)',
+  'overview' => 'The workshop helps the students to know about Ethical Hacking and
+  Information security thereby giving them knowledge about Reading the
+  Hacker’s mind and Understanding the hacking psychology and methodology and lots
+  more with proper demonstrations and practical work. The workshop would be
+  conducted by faculty having InterNational Level Expertise in the field of Information
+  Security and Ethical Hacking. 
+  <br />',
+  'event_structure' => 'Workshop Structure:
+  <li className="event-text__structure--list-item">
+  ● This is 2 days Workshop.
+  </li> 
+
+  
+<li className="event-text__structure--list-item">
+  Topics to be covered on Day 1: <br />
+  ● Introduction to Security Concepts <br />
+  ● Malware and Social Engineering <br />
+  ● Q and A 
+  </li>
+<li className="event-text__structure--list-item">
+  Topics to be covered on Day 2: <br />
+  ● Website and web application Security <br />
+  ● Wireless Network Security <br />
+  ● Q and A 
+  </li>
+  ',
+  'rules' => "<b>Requirements:</b> <br />
+  The laptop is more preferable for the workshop.<br />
+  Participants have to connect with good internet connectivity.",
+  'criteria' => "",
+  'rewards' => "● All the participants will get National-level participation certificates.",
+  'event_id' => 9,
+]);
+
+//2 (cloud computing)
+
+  DB::table('mainevents')->insert([
+
+  'name' => 'Cloud Computing Workshop',
+  'price' => 100,
+  'img' => '',
+  'big_img' => '',
+  'rulebook' => '',
+  'allevents_id' => '',
+  'platform' => 'MS Teams',
+  'participants' => 'Individual (solo)',
+  'overview' => 'The Cloud Computing Workshop will make participants adept at
+various cloud computing architectures. Live projects will help participants
+keep up with all technologies, tools, and methodologies required to
+understand and work on cloud computing principles used in the IT industry. 
+  <br />',
+  'event_structure' => 'Workshop Structure:
+  <li className="event-text__structure--list-item">
+  This is 2 days Workshop.
+  </li> 
+  <li className="event-text__structure--list-item">
+  Topics to be covered:</li>
+  <ul>
+      <li>1. What is Cloud Computing? </li>
+      <li>2. What is virtualization. </li>
+      <li>3. Need for virtualization in cloud </li>
+      <li>4. Hand on virtualization in VMware </li>
+      <li>5. Types of Cloud Deployment </li>
+      <li>6. Types of Cloud Computing Services
+        <ul>
+          &nbsp a. Infrastructure as a Service (IaaS)<br />
+          &nbsp b. Platform as a Service (PaaS)<br />
+          &nbsp c. Software as a Service (SaaS)<br />
+        </ul>
+      </li>
+      <li>7. Why Migrate into the cloud </li>
+      <li>8. How to Choose the Right Cloud Provider </li>
+      <li>9. What to Look For in a Cloud Services Provider </li>
+      <li>10. Different market leaders in cloud service provider </li>
+      <li>11. Amazon web service </li>
+      <li>12. Hands-on Amazon’s compute EC2 </li>
+      <li>13. Hands-on Amazon’s Storage service S3 </li>
+      <li>14. Google app engine </li>
+      </ul>
+    </li>
+    ',
+  'rules' => "<b>Requirements:</b> <br />
+  The laptop is more preferable for the workshop.<br />
+  Participants have to connect with good internet connectivity.",
+  'criteria' => "",
+  'rewards' => "● All the participants will get National-level participation certificates.",
+  'event_id' => 9,
+]);
+
+//3 (iot workshop)
+
+  DB::table('mainevents')->insert([
+
+  'name' => 'Internet of Things (IoT) Workshop',
+  'price' => 100,
+  'img' => '1EE4S6jh1arAZ2dfohPQI6LidnORXkukV',
+  'big_img' => '1WIDyPHRxOV3SDTEtkgtXbSIdOtY6qZL8',
+  'rulebook' => '',
+  'allevents_id' => '',
+  'platform' => 'MS Teams',
+  'participants' => 'Individual (solo)',
+  'overview' => 'Internet of Things is a new revolution of the Internet. A world where the
+real, digital, and the virtual are converging to create smart environments that
+make energy, transport, cities, and many other areas more intelligent. A
+device that becomes a smart device is called IoT.
+  <br />',
+  'event_structure' => 'Workshop Structure:
+  <li className="event-text__structure--list-item">
+  ● This is 2 days Workshop.
+  </li> 
+
+  
+<li className="event-text__structure--list-item">
+  Topics to be covered: <br />
+      ● What is IoT? <br />
+      ● Difference between Microcontroller and Microprocessor <br />
+      ● Applications of IoT <br />
+      ● Architecture of IoT<br />
+      ● Describing IoT Board<br />
+      ● Introduction to Microcontrollers: Arduino, Raspberry Pi, and Node MCU<br />
+      ● Interfacing to Microcontrollers: Arduino, Raspberry Pi, and Node MCU<br />
+      ● Introduction to IoT cloud<br />
+      ● The operating system of IoT<br />
+      ● Future of IoT<br />
+  </li>
+  ',
+  'rules' => "<b>Requirements:</b> <br />
+  The laptop is more preferable for the workshop.<br />
+  Participants have to connect with good internet connectivity.",
+  'criteria' => "",
+  'rewards' => "● All the participants will get National-level participation certificates.",
+  'event_id' => 9,
+]);
+
+  //4 (android devlopment)
+
+  DB::table('mainevents')->insert([
+
+  'name' => 'Android Development Workshop',
+  'price' => 100,
+  'img' => '1NjbCGOLjfVMOMn42Pi5AKKND7KxLy409',
+  'big_img' => '1qc39idlQlJMuAs3i1UZxqKKXABu9c6qE',
+  'rulebook' => '',
+  'allevents_id' => '',
+  'platform' => 'MS Teams',
+  'participants' => 'Individual (solo)',
+  'overview' => "Learn to develop applications in the latest operating system with practical
+implementation and begin managing your own cool applications like a professional at
+this workshop. Attendees will be provided with instructions to build and manage new
+cool applications. What's more, you can even sell out this application and earn good
+money. 
+  <br />",
+  'event_structure' => 'Workshop Structure:
+  <li className="event-text__structure--list-item">
+  ● This is 2 days Workshop.
+  </li> 
+
+  
+<li className="event-text__structure--list-item">
+  Topics to be covered on Day 1: <br />
+  ● Installation of Android Studio<br />
+  ● Manifest File, Logo, Name of Application<br />
+  ● Layouts and Themes<br />
+  ● Animations in Layout<br /> 
+  </li>
+<li className="event-text__structure--list-item">
+  Topics to be covered on Day 2: <br />
+  ● Introduction To Kotlin<br />
+  ● Kotlin Programming<br />
+  ● Website to Android(WebView)<br />
+  ● Q/A Session<br />
+  </li>
+  ',
+  'rules' => "<b>Requirements:</b> <br />
+  The laptop is more preferable for the workshop.<br />
+  Participants have to connect with good internet connectivity.",
+  'criteria' => "",
+  'rewards' => "● All the participants will get National-level participation certificates.",
+  'event_id' => 9,
+]);
+
+  //5 (photography workshop)
+
+  DB::table('mainevents')->insert([
+
+  'name' => 'Photography Workshop',
+  'price' => 100,
+  'img' => '',
+  'big_img' => '',
+  'rulebook' => '',
+  'allevents_id' => '',
+  'platform' => 'MS Teams',
+  'participants' => 'Individual (solo)',
+  'overview' => 'This workshop will be conducted by the Institute for Photography Excellence.
+It is a 1-day workshop. 
+  <br />',
+  'event_structure' => 'Workshop Structure:
+  <li className="event-text__structure--list-item">
+  ● This is 1 day Workshop.
+  </li> 
+
+  
+<li className="event-text__structure--list-item">
+  Topics to be covered on Day 1: <br />
+  ● Camera Controls<br />
+  ● Framing & Composition Techniques.<br />
+  ● Simplicity<br />
+  ● Rule of thirds<br />
+  ● Landscape Composition<br />
+  ● Lines<br />
+  ● Shapes<br />
+  ● Framing<br />
+  ● Negative space<br />
+  ● Angle<br />
+  ● Exposure<br />
+  ● Aperture<br />
+  ● Shutter Speed<br />
+  ● ISO<br />
+  ● And many more topics to be covered<br />
+  </li>
+
+  ',
+  'rules' => "<b>Requirements:</b> <br />
+  The laptop is more preferable for the workshop.<br />
+  Participants have to connect with good internet connectivity.",
+  'criteria' => "",
+  'rewards' => "● All the participants will get National-level participation certificates.",
+  'event_id' => 9,
+]);
+    // DB::table('mainevents')->insert([
+    //   'name' => 'To be added soon...',
+    //   'price' => 0,
+    //   'img' => '',
+    //   'big_img' => '',
+    //   'rulebook' => '',
+    //   'allevents_id' => '',
+    //   'platform' => 'To be added soon...',
+    //   'participants' => 'Individual (solo)',
+    //   'overview' => 'To be added soon...',
+    //   'event_structure' => "To be added soon...",
+    //   'rules' => "To be added soon...",
+    //   'criteria' => "To be added soon...",
+    //   'rewards' => "To be added soon...",
+    //   'event_id' => 9
+    // ]);
   }
 }
