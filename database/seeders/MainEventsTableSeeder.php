@@ -644,8 +644,8 @@ class MainEventsTableSeeder extends Seeder
     DB::table('mainevents')->insert([
       'name' => 'Robo-Sapiens',
       'price' => 120,
-      'img' => '',
-      'big_img' => '',
+      'img' => '1A3BSnMgvgfw-x-FqWW2um1ZuQC8SrHQc',
+      'big_img' => '1AADbw5FnJfFArG_cy8JZjjUYlHGhZpKm',
       'rulebook' => '',
       'allevents_id' => '1799675',
       'platform' => 'MS Teams <br/> Google Forms',
@@ -862,7 +862,7 @@ class MainEventsTableSeeder extends Seeder
       'price' => 30,
       'img' => '1ET2iwKDxQlxDuSNzM1lzUqGQz7bhvkbT',
       'big_img' => '1IC4Z4QhXXDQcoOCqekg0H0sdhg68sN2H',
-      'rulebook' => '',
+      'rulebook' => 'https://drive.google.com/file/d/1s4_chB72hL6IYrka92svSXJMvh7lBLi3/view?usp=sharing',
       'allevents_id' => '1799977',
       'platform' => '',
       'participants' => 'Individual (solo)',
@@ -887,7 +887,7 @@ class MainEventsTableSeeder extends Seeder
       'price' => 90,
       'img' => '1ET2iwKDxQlxDuSNzM1lzUqGQz7bhvkbT',
       'big_img' => '1IC4Z4QhXXDQcoOCqekg0H0sdhg68sN2H',
-      'rulebook' => '',
+      'rulebook' => 'https://drive.google.com/file/d/13Q6M5Pt7Fm6tp7g5kWY2639aTGHHOxnX/view?usp=sharing',
       'allevents_id' => '1799988',
       'platform' => '',
       'participants' => 'Team',
@@ -1196,7 +1196,7 @@ DB::table('mainevents')->insert([
   'rules' => "<b>Requirements:</b> <br />
   The laptop is more preferable for the workshop.<br />
   Participants have to connect with good internet connectivity.",
-  'criteria' => "To be added soon...",
+  'criteria' => "",
   'rewards' => "● All the participants will get National-level participation certificates.",
   'event_id' => 9,
 ]);
@@ -1205,7 +1205,7 @@ DB::table('mainevents')->insert([
 
   DB::table('mainevents')->insert([
 
-  'name' => 'Cloud Computing Workshop:',
+  'name' => 'Cloud Computing Workshop',
   'price' => 100,
   'img' => '',
   'big_img' => '',
@@ -1220,35 +1220,38 @@ understand and work on cloud computing principles used in the IT industry.
   <br />',
   'event_structure' => 'Workshop Structure:
   <li className="event-text__structure--list-item">
-  ● This is 2 days Workshop.
+  This is 2 days Workshop.
   </li> 
-<li className="event-text__structure--list-item">
- Topics to be covered:
-    ● 1. What is Cloud Computing? <br />
-    ● 2. What is virtualization. <br />
-    ● 3. Need for virtualization in cloud <br />
-    ● 4. Hand on virtualization in VMware <br />
-    ● 5. Types of Cloud Deployment <br />
-    ● 6. Types of Cloud Computing Services <br />
+  <li className="event-text__structure--list-item">
+  Topics to be covered:</li>
+  <ul>
+      <li>1. What is Cloud Computing? </li>
+      <li>2. What is virtualization. </li>
+      <li>3. Need for virtualization in cloud </li>
+      <li>4. Hand on virtualization in VMware </li>
+      <li>5. Types of Cloud Deployment </li>
+      <li>6. Types of Cloud Computing Services
         <ul>
-          <li>○ a. -Infrastructure as a Service (IaaS)</li>
-          <li>○ b. -Platform as a Service (PaaS)</li>
-          <li>○ c. -Software as a Service (SaaS)</li>
+          &nbsp a. Infrastructure as a Service (IaaS)<br />
+          &nbsp b. Platform as a Service (PaaS)<br />
+          &nbsp c. Software as a Service (SaaS)<br />
         </ul>
-    ● 7. Why Migrate into the cloud <br />
-    ● 8. How to Choose the Right Cloud Provider <br />
-    ● 9. What to Look For in a Cloud Services Provider <br />
-    ● 10. Different market leaders in cloud service provider <br />
-    ● 11. Amazon web service <br />
-    ● 12. Hands-on Amazon’s compute EC2 <br />
-    ● 13. Hands-on Amazon’s Storage service S3 <br />
-    ● 14. Google app engine <br />
-  </li>
-  ',
+      </li>
+      <li>7. Why Migrate into the cloud </li>
+      <li>8. How to Choose the Right Cloud Provider </li>
+      <li>9. What to Look For in a Cloud Services Provider </li>
+      <li>10. Different market leaders in cloud service provider </li>
+      <li>11. Amazon web service </li>
+      <li>12. Hands-on Amazon’s compute EC2 </li>
+      <li>13. Hands-on Amazon’s Storage service S3 </li>
+      <li>14. Google app engine </li>
+      </ul>
+    </li>
+    ',
   'rules' => "<b>Requirements:</b> <br />
   The laptop is more preferable for the workshop.<br />
   Participants have to connect with good internet connectivity.",
-  'criteria' => "To be added soon...",
+  'criteria' => "",
   'rewards' => "● All the participants will get National-level participation certificates.",
   'event_id' => 9,
 ]);
@@ -1257,7 +1260,7 @@ understand and work on cloud computing principles used in the IT industry.
 
   DB::table('mainevents')->insert([
 
-  'name' => 'Internet of Things (IoT) Workshop:',
+  'name' => 'Internet of Things (IoT) Workshop',
   'price' => 100,
   'img' => '1EE4S6jh1arAZ2dfohPQI6LidnORXkukV',
   'big_img' => '1WIDyPHRxOV3SDTEtkgtXbSIdOtY6qZL8',
@@ -1293,7 +1296,7 @@ device that becomes a smart device is called IoT.
   'rules' => "<b>Requirements:</b> <br />
   The laptop is more preferable for the workshop.<br />
   Participants have to connect with good internet connectivity.",
-  'criteria' => "To be added soon...",
+  'criteria' => "",
   'rewards' => "● All the participants will get National-level participation certificates.",
   'event_id' => 9,
 ]);
@@ -1302,7 +1305,7 @@ device that becomes a smart device is called IoT.
 
   DB::table('mainevents')->insert([
 
-  'name' => 'Android Development Workshop :',
+  'name' => 'Android Development Workshop',
   'price' => 100,
   'img' => '1NjbCGOLjfVMOMn42Pi5AKKND7KxLy409',
   'big_img' => '1qc39idlQlJMuAs3i1UZxqKKXABu9c6qE',
@@ -1340,7 +1343,7 @@ money.
   'rules' => "<b>Requirements:</b> <br />
   The laptop is more preferable for the workshop.<br />
   Participants have to connect with good internet connectivity.",
-  'criteria' => "To be added soon...",
+  'criteria' => "",
   'rewards' => "● All the participants will get National-level participation certificates.",
   'event_id' => 9,
 ]);
@@ -1349,7 +1352,7 @@ money.
 
   DB::table('mainevents')->insert([
 
-  'name' => 'Photography Workshop :',
+  'name' => 'Photography Workshop',
   'price' => 100,
   'img' => '',
   'big_img' => '',
@@ -1389,7 +1392,7 @@ It is a 1-day workshop.
   'rules' => "<b>Requirements:</b> <br />
   The laptop is more preferable for the workshop.<br />
   Participants have to connect with good internet connectivity.",
-  'criteria' => "To be added soon...",
+  'criteria' => "",
   'rewards' => "● All the participants will get National-level participation certificates.",
   'event_id' => 9,
 ]);
